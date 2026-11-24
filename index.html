@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Арт-архив карточек 10×10</title>
+  <meta name="theme-color" content="#7E6B8F" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Арт 10×10" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --surface: #FFFFFF;
+      --surface-soft: #F3EFEA;
+      --text: #2D3436;
+      --text-muted: #636E72;
+      --accent: #7E6B8F;
+      --accent-dark: #645373;
+      --accent-soft: #EFEBF3;
+      --coral: #E07A5F;
+      --mint: #5B9A8B;
+      --border: #E8E2D9;
+      --shadow: 0 4px 16px rgba(45, 52, 54, 0.06);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      padding-bottom: 96px;
+    }
+
+    .app {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .title-wrap {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .title-wrap h1 {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .title-wrap p {
+      margin: 3px 0 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .install-btn {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 14px;
+      height: 42px;
+      padding: 0 13px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(126, 107, 143, 0.32);
+      white-space: nowrap;
+    }
+
+    .install-btn.visible {
+      display: inline-flex;
+    }
+
+    .icon-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 14px;
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      flex-shrink: 0;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: var(--surface-soft);
+      padding: 5px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 10px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--surface);
+      color: var(--accent);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .view {
+      display: none;
+    }
+    .view.active {
+      display: block;
+    }
+
+    /* Gallery Controls */
+    .search-box {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 11px 14px 11px 38px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 15px;
+      color: var(--text);
+      outline: none;
+    }
+
+    .search-box span {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.6;
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      scrollbar-width: none;
+    }
+    .chips::-webkit-scrollbar { display: none; }
+
+    .chip {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .chip.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* 10x10 Square Grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .art-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .art-thumb {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      background: var(--surface-soft);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .art-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .art-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .palette-dots {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .palette-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    .fav-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 999px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .art-info {
+      padding: 11px 12px;
+    }
+
+    .art-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .art-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .marker-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 7px;
+    }
+
+    .m-tag {
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    /* Generator View */
+    .gen-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    .gen-palette {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .swatch-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .swatch-color {
+      height: 68px;
+      width: 100%;
+    }
+
+    .swatch-label {
+      padding: 8px 6px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .swatch-code {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: block;
+      font-weight: 500;
+    }
+
+    .prompt-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .prompt-row {
+      background: var(--surface-soft);
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .prompt-row small {
+      display: block;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .prompt-row strong {
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .lock-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .lock-btn.locked {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+    }
+
+    .btn-primary {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 14px;
+      padding: 13px 16px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary:active {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      width: 100%;
+      background: var(--surface-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .fab {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 15px 26px;
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(126, 107, 143, 0.38);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 20;
+    }
+
+    /* Modals */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 50;
+    }
+
+    .modal-backdrop.open { display: flex; }
+
+    .modal {
+      background: var(--surface);
+      width: 100%;
+      max-width: 640px;
+      border-radius: 24px 24px 0 0;
+      padding: 20px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--text-muted);
+    }
+
+    .field input, .field select, .field textarea {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      font-size: 15px;
+      font-family: inherit;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .photo-preview {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      border: 2px dashed var(--border);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+      margin: 0 auto 8px;
+      position: relative;
+    }
+
+    .photo-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .color-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .color-row input[type="color"] {
+      width: 48px;
+      height: 40px;
+      padding: 2px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .modal-footer {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .detail-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+      object-fit: cover;
+      background: var(--surface-soft);
+      margin-bottom: 14px;
+    }
+
+    .empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 36px 16px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="title-wrap">
+        <h1>🎨 Арт-архив 10×10</h1>
+        <p id="statsSubtitle">Карточки линером и маркерами</p>
+      </div>
+      <div class="header-actions">
+        <button class="install-btn" id="installAppBtn">📲 Установить</button>
+        <button class="icon-btn" id="backupBtn" title="Резервная копия">💾</button>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="gallery">🖼️ Галерея работ</button>
+      <button class="tab-btn" data-tab="generator">🎲 Генератор идеи</button>
+    </div>
+
+    <!-- GALLERY VIEW -->
+    <div class="view active" id="view-gallery">
+      <div class="search-box">
+        <span>🔍</span>
+        <input type="text" id="searchInput" placeholder="Поиск по названию, номерам маркеров..." />
+      </div>
+      <div class="chips" id="styleChips"></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+    <!-- GENERATOR VIEW -->
+    <div class="view" id="view-generator">
+      <div class="gen-box">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h2 style="margin:0; font-size:18px;">✨ Задание на карточку 10×10</h2>
+          <span style="font-size:12px; color:var(--text-muted);">Нажми 🔒, чтобы закрепить</span>
+        </div>
+
+        <div class="gen-palette" id="genPalette"></div>
+
+        <div class="prompt-cards">
+          <div class="prompt-row">
+            <div>
+              <small>Геометрия и композиция</small>
+              <strong id="genGeom">—</strong>
+            </div>
+            <button class="lock-btn" id="lockGeom" title="Закрепить">🔓</button>
+          </div>
+          <div class="prompt-row">
+            <div>
+              <small>Органический мотив</small>
+              <strong id="genOrg">—</strong>
+            </div>
+            <button class="lock-btn" id="lockOrg" title="Закрепить">🔓</button>
+          </div>
+          <div class="prompt-row">
+            <div>
+              <small>Приём линером</small>
+              <strong id="genLiner">—</strong>
+            </div>
+            <button class="lock-btn" id="lockLiner" title="Закрепить">🔓</button>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="rollIdeaBtn">🎲 Сгенерировать новое сочетание</button>
+        <button class="btn-secondary" id="saveIdeaAsCardBtn">➕ Взять в работу и создать карточку</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="fab" id="addCardBtn">＋ Добавить карточку</button>
+
+  <!-- Add / Edit Modal -->
+  <div class="modal-backdrop" id="cardModal">
+    <div class="modal">
+      <h2 id="modalTitle">Новая карточка 10×10</h2>
+      <input type="hidden" id="editCardId" />
+
+      <div class="field" style="text-align:center;">
+        <label class="photo-preview" for="cardPhotoInput" id="photoPreviewBox">
+          <span style="font-size:13px; color:var(--text-muted); padding:8px;">📷 Нажми, чтобы добавить фото рисунка</span>
+        </label>
+        <input type="file" id="cardPhotoInput" accept="image/*" style="display:none;" />
+        <button type="button" id="clearPhotoBtn" style="display:none; background:none; border:none; color:var(--coral); font-size:12px; font-weight:700; cursor:pointer;">Убрать фото</button>
+      </div>
+
+      <div class="field">
+        <label>Название карточки</label>
+        <input type="text" id="cardTitle" placeholder="Например: Ботанический круг и арки" />
+      </div>
+
+      <div class="field" style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div>
+          <label>Стиль / серия</label>
+          <select id="cardStyle">
+            <option value="Геометрия + органика">Геометрия + органика</option>
+            <option value="Чистая геометрия">Чистая геометрия</option>
+            <option value="Ботаника и листья">Ботаника и листья</option>
+            <option value="Абстрактные пятна">Абстрактные пятна</option>
+            <option value="Зентангл / дудлинг">Зентангл / дудлинг</option>
+          </select>
+        </div>
+        <div>
+          <label>Дата создания</label>
+          <input type="date" id="cardDate" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Номера спиртовых маркеров и линера</label>
+        <input type="text" id="cardMarkers" placeholder="Например: R22, BG13, Y15, линер 0.3" />
+      </div>
+
+      <div class="field">
+        <label>3 цвета палитры карточек (для визуальной сетки)</label>
+        <div class="color-row">
+          <input type="color" id="col1" value="#E07A5F" />
+          <input type="color" id="col2" value="#81B29A" />
+          <input type="color" id="col3" value="#F2CC8F" />
+          <label style="margin:0 0 0 auto; display:flex; align-items:center; gap:6px; font-size:14px; color:var(--text);">
+            <input type="checkbox" id="cardFav" style="width:18px; height:18px;" /> ⭐ В избранное
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Заметка (бумага, удачный приём, впечатления)</label>
+        <textarea id="cardNote" rows="2" placeholder="Что особенно понравилось в этой работе?"></textarea>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" id="deleteCardBtn" style="margin:0; color:var(--coral); display:none;">Удалить</button>
+        <button class="btn-secondary" id="closeModalBtn" style="margin:0;">Отмена</button>
+        <button class="btn-primary" id="saveCardBtn">Сохранить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- View Detail Modal -->
+  <div class="modal-backdrop" id="detailModal">
+    <div class="modal">
+      <div id="detailBody"></div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="detailEditBtn" style="margin:0;">✏️ Редактировать</button>
+        <button class="btn-primary" id="closeDetailBtn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backup Modal -->
+  <div class="modal-backdrop" id="backupModal">
+    <div class="modal">
+      <h2>Резервная копия арт-архива</h2>
+      <p style="font-size:13px; color:var(--text-muted); margin-top:0;">
+        Фотографии автоматически сжимаются для экономии памяти телефона. Вы можете сохранить весь архив в JSON-файл.
+      </p>
+      <button class="btn-primary" id="exportJsonBtn">⬇️ Скачать архив (.json)</button>
+      <label class="btn-secondary" style="display:block; text-align:center; cursor:pointer;">
+        ⬆️ Восстановить из файла (.json)
+        <input type="file" id="importJsonInput" accept=".json" style="display:none;" />
+      </label>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="closeBackupBtn" style="margin:0;">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // PWA Install Button logic
+    let deferredPrompt = null;
+    const installBtn = document.getElementById('installAppBtn');
+
+    function isStandaloneMode() {
+      return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    }
+
+    if (isStandaloneMode()) {
+      installBtn.classList.remove('visible');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (!isStandaloneMode()) {
+        installBtn.classList.add('visible');
+      }
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        installBtn.classList.remove('visible');
+      }
+      deferredPrompt = null;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      installBtn.classList.remove('visible');
+      deferredPrompt = null;
+    });
+
+    const STORAGE_KEY = 'art_cards_10x10_v1';
+
+    function todayStr() {
+      return new Date().toISOString().split('T')[0];
+    }
+
+    const SAMPLE_CARDS = [
+      {
+        id: 'c1',
+        title: 'Солнечные арки и эвкалипт',
+        style: 'Геометрия + органика',
+        date: todayStr(),
+        markers: 'YR14, G43, E31, линер 0.2',
+        colors: ['#E07A5F', '#81B29A', '#F2CC8F'],
+        favorite: true,
+        note: 'Контраст тёплой терракоты с тонкой веточкой эвкалипта поверх геометрических арок.',
+        photo: ''
+      },
+      {
+        id: 'c2',
+        title: 'Мятная спираль и моностера',
+        style: 'Ботаника и листья',
+        date: todayStr(),
+        markers: 'BG11, BG34, CG3, линер 0.4',
+        colors: ['#5B9A8B', '#A8DADC', '#457B9D'],
+        favorite: false,
+        note: 'Мягкий градиент спиртовыми маркерами внутри круглой рамки.',
+        photo: ''
+      },
+      {
+        id: 'c3',
+        title: 'Сливовый баланс',
+        style: 'Чистая геометрия',
+        date: todayStr(),
+        markers: 'V15, RV13, Y21, линер 0.1',
+        colors: ['#7E6B8F', '#D4A5A5', '#F9E2AE'],
+        favorite: true,
+        note: 'Пересечение полукругов с мелкой штриховкой линером.',
+        photo: ''
+      }
+    ];
+
+    let cards = loadCards();
+    let styleFilter = 'Все';
+    let searchQuery = '';
+    let currentPhotoData = '';
+
+    function loadCards() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_CARDS));
+          return SAMPLE_CARDS;
+        }
+        return JSON.parse(raw);
+      } catch (e) {
+        return SAMPLE_CARDS;
+      }
+    }
+
+    function saveCards() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
+      } catch (e) {
+        alert('Память браузера переполнена! Скачайте резервную копию в JSON и удалите пару старых фото.');
+      }
+    }
+
+    function formatDateRu(iso) {
+      if (!iso) return '';
+      const [y, m, d] = iso.split('-');
+      return `${d}.${m}.${y}`;
+    }
+
+    // Tabs switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('view-' + btn.dataset.tab).classList.add('active');
+        document.getElementById('addCardBtn').style.display = btn.dataset.tab === 'gallery' ? 'flex' : 'none';
+      };
+    });
+
+    function renderGallery() {
+      document.getElementById('statsSubtitle').textContent = `В коллекции: ${cards.length} карточ${cards.length === 1 ? 'ка' : (cards.length < 5 ? 'ки' : 'ек')} 10×10 см`;
+
+      const styles = ['Все', '⭐ Избранное', ...new Set(cards.map(c => c.style))];
+      const chipsEl = document.getElementById('styleChips');
+      chipsEl.innerHTML = styles.map(s => `
+        <button class="chip ${styleFilter === s ? 'active' : ''}" data-st="${s}">${s}</button>
+      `).join('');
+
+      chipsEl.querySelectorAll('.chip').forEach(btn => {
+        btn.onclick = () => {
+          styleFilter = btn.dataset.st;
+          renderGallery();
+        };
+      });
+
+      const filtered = cards.filter(c => {
+        if (styleFilter === '⭐ Избранное' && !c.favorite) return false;
+        if (styleFilter !== 'Все' && styleFilter !== '⭐ Избранное' && c.style !== styleFilter) return false;
+        if (!searchQuery) return true;
+        const q = searchQuery.toLowerCase();
+        return (
+          c.title.toLowerCase().includes(q) ||
+          (c.markers && c.markers.toLowerCase().includes(q)) ||
+          (c.note && c.note.toLowerCase().includes(q))
+        );
+      });
+
+      const gridEl = document.getElementById('galleryGrid');
+      if (filtered.length === 0) {
+        gridEl.innerHTML = `<div class="empty">Карточек по этому фильтру пока нет 🎨</div>`;
+        return;
+      }
+
+      gridEl.innerHTML = filtered.map(c => {
+        const cols = c.colors || ['#7E6B8F', '#81B29A', '#E07A5F'];
+        const markersArr = c.markers ? c.markers.split(',').map(s => s.trim()).filter(Boolean).slice(0, 3) : [];
+        return `
+          <div class="art-card" onclick="openDetail('${c.id}')">
+            <div class="art-thumb">
+              ${c.photo
+                ? `<img src="${c.photo}" alt="${c.title}" />`
+                : `<div class="art-placeholder" style="background: linear-gradient(135deg, ${cols[0]}22, ${cols[1]}22, ${cols[2]}22);">
+                     <div class="palette-dots">
+                       <span class="palette-dot" style="background:${cols[0]}"></span>
+                       <span class="palette-dot" style="background:${cols[1]}"></span>
+                       <span class="palette-dot" style="background:${cols[2]}"></span>
+                     </div>
+                     <span style="font-size:11px; color:var(--text-muted); font-weight:600;">10×10 см • без фото</span>
+                   </div>`
+              }
+              ${c.favorite ? `<div class="fav-badge">⭐</div>` : ''}
+            </div>
+            <div class="art-info">
+              <h3 class="art-title">${c.title}</h3>
+              <div class="art-sub">
+                <span>${formatDateRu(c.date)}</span>
+              </div>
+              ${markersArr.length ? `
+                <div class="marker-tags">
+                  ${markersArr.map(m => `<span class="m-tag">${m}</span>`).join('')}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.getElementById('searchInput').oninput = (e) => {
+      searchQuery = e.target.value.trim();
+      renderGallery();
+    };
+
+    // Photo compression helper (square crop / max 720px JPEG so localStorage easily holds dozens of cards)
+    document.getElementById('cardPhotoInput').onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          const maxSide = 720;
+          let w = img.width;
+          let h = img.height;
+          if (w > maxSide || h > maxSide) {
+            if (w > h) {
+              h = Math.round(h * maxSide / w);
+              w = maxSide;
+            } else {
+              w = Math.round(w * maxSide / h);
+              h = maxSide;
+            }
+          }
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, w, h);
+          currentPhotoData = canvas.toDataURL('image/jpeg', 0.82);
+          updatePhotoPreview();
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
+
+    function updatePhotoPreview() {
+      const box = document.getElementById('photoPreviewBox');
+      const clearBtn = document.getElementById('clearPhotoBtn');
+      if (currentPhotoData) {
+        box.innerHTML = `<img src="${currentPhotoData}" alt="Превью" />`;
+        clearBtn.style.display = 'inline-block';
+      } else {
+        box.innerHTML = `<span style="font-size:13px; color:var(--text-muted); padding:8px;">📷 Нажми, чтобы добавить фото рисунка</span>`;
+        clearBtn.style.display = 'none';
+      }
+    }
+
+    document.getElementById('clearPhotoBtn').onclick = () => {
+      currentPhotoData = '';
+      document.getElementById('cardPhotoInput').value = '';
+      updatePhotoPreview();
+    };
+
+    // Add / Edit modal
+    document.getElementById('addCardBtn').onclick = () => openCardModal();
+
+    function openCardModal(card = null, prefill = null) {
+      document.getElementById('modalTitle').textContent = card ? 'Редактировать карточку' : 'Новая карточка 10×10';
+      document.getElementById('editCardId').value = card ? card.id : '';
+      document.getElementById('cardTitle').value = card ? card.title : (prefill ? prefill.title : '');
+      document.getElementById('cardStyle').value = card ? card.style : 'Геометрия + органика';
+      document.getElementById('cardDate').value = card ? card.date : todayStr();
+      document.getElementById('cardMarkers').value = card ? (card.markers || '') : (prefill ? prefill.markers : '');
+      const cols = card ? (card.colors || ['#E07A5F', '#81B29A', '#F2CC8F']) : (prefill ? prefill.colors : ['#E07A5F', '#81B29A', '#F2CC8F']);
+      document.getElementById('col1').value = cols[0];
+      document.getElementById('col2').value = cols[1];
+      document.getElementById('col3').value = cols[2];
+      document.getElementById('cardFav').checked = card ? !!card.favorite : false;
+      document.getElementById('cardNote').value = card ? (card.note || '') : (prefill ? prefill.note : '');
+      currentPhotoData = card ? (card.photo || '') : '';
+      updatePhotoPreview();
+      document.getElementById('deleteCardBtn').style.display = card ? 'inline-block' : 'none';
+      document.getElementById('cardModal').classList.add('open');
+    }
+
+    document.getElementById('closeModalBtn').onclick = () => {
+      document.getElementById('cardModal').classList.remove('open');
+    };
+
+    document.getElementById('saveCardBtn').onclick = () => {
+      const id = document.getElementById('editCardId').value;
+      const title = document.getElementById('cardTitle').value.trim();
+      if (!title) return alert('Введите название карточки');
+
+      const payload = {
+        title,
+        style: document.getElementById('cardStyle').value,
+        date: document.getElementById('cardDate').value || todayStr(),
+        markers: document.getElementById('cardMarkers').value.trim(),
+        colors: [
+          document.getElementById('col1').value,
+          document.getElementById('col2').value,
+          document.getElementById('col3').value
+        ],
+        favorite: document.getElementById('cardFav').checked,
+        note: document.getElementById('cardNote').value.trim(),
+        photo: currentPhotoData
+      };
+
+      if (id) {
+        const idx = cards.findIndex(c => c.id === id);
+        if (idx !== -1) cards[idx] = { ...cards[idx], ...payload };
+      } else {
+        cards.unshift({ id: 'c_' + Date.now(), ...payload });
+      }
+
+      saveCards();
+      document.getElementById('cardModal').classList.remove('open');
+      renderGallery();
+    };
+
+    document.getElementById('deleteCardBtn').onclick = () => {
+      const id = document.getElementById('editCardId').value;
+      if (!id) return;
+      cards = cards.filter(c => c.id !== id);
+      saveCards();
+      document.getElementById('cardModal').classList.remove('open');
+      renderGallery();
+    };
+
+    // Detail Modal
+    window.openDetail = function(id) {
+      const card = cards.find(c => c.id === id);
+      if (!card) return;
+      const cols = card.colors || ['#7E6B8F', '#81B29A', '#E07A5F'];
+      document.getElementById('detailBody').innerHTML = `
+        ${card.photo ? `<img class="detail-img" src="${card.photo}" alt="${card.title}" />` : ''}
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:8px;">
+          <h2 style="margin:0;">${card.favorite ? '⭐ ' : ''}${card.title}</h2>
+          <span style="font-size:12px; color:var(--text-muted); white-space:nowrap;">${formatDateRu(card.date)}</span>
+        </div>
+        <div style="font-size:13px; color:var(--accent-dark); font-weight:700; margin-bottom:12px;">${card.style}</div>
+        <div style="display:flex; gap:8px; margin-bottom:12px;">
+          ${cols.map(hex => `<div style="flex:1; height:28px; border-radius:8px; background:${hex}; border:1px solid var(--border);"></div>`).join('')}
+        </div>
+        ${card.markers ? `<div style="background:var(--accent-soft); padding:10px 12px; border-radius:12px; font-size:13px; margin-bottom:10px;"><b>🖊️ Материалы:</b> ${card.markers}</div>` : ''}
+        ${card.note ? `<div style="background:var(--surface-soft); padding:10px 12px; border-radius:12px; font-size:14px;">${card.note}</div>` : ''}
+      `;
+      document.getElementById('detailEditBtn').onclick = () => {
+        document.getElementById('detailModal').classList.remove('open');
+        openCardModal(card);
+      };
+      document.getElementById('detailModal').classList.add('open');
+    };
+
+    document.getElementById('closeDetailBtn').onclick = () => {
+      document.getElementById('detailModal').classList.remove('open');
+    };
+
+    // IDEA GENERATOR
+    const PALETTES = [
+      [
+        { name: 'Терракота', code: 'R22 / YR14', hex: '#E07A5F' },
+        { name: 'Шалфей', code: 'G43 / BG93', hex: '#81B29A' },
+        { name: 'Тёплый песок', code: 'Y21 / E31', hex: '#F2CC8F' }
+      ],
+      [
+        { name: 'Пыльная слива', code: 'V15 / RV95', hex: '#7E6B8F' },
+        { name: 'Пудровый розовый', code: 'RV11 / R01', hex: '#E5989B' },
+        { name: 'Сливочный крем', code: 'YR000 / E50', hex: '#F8EDEB' }
+      ],
+      [
+        { name: 'Морская мята', code: 'BG13 / G02', hex: '#5B9A8B' },
+        { name: 'Глубокий синий', code: 'B37 / B97', hex: '#3D5A80' },
+        { name: 'Персиковый свет', code: 'YR02 / Y13', hex: '#F4A261' }
+      ],
+      [
+        { name: 'Охра золотая', code: 'YR24 / Y35', hex: '#D9822B' },
+        { name: 'Оливковый лист', code: 'YG63 / G85', hex: '#6B8E23' },
+        { name: 'Тёплый серый', code: 'WG2 / CG3', hex: '#B8B0A6' }
+      ],
+      [
+        { name: 'Коралловый закат', code: 'R05 / YR04', hex: '#F28482' },
+        { name: 'Лавандовый туман', code: 'BV02 / V01', hex: '#B5838D' },
+        { name: 'Мятный лёд', code: 'BG10 / G00', hex: '#84A59D' }
+      ]
+    ];
+
+    const GEOM_LIST = [
+      'Две смещённые арки и круг в центре',
+      'Диагональное деление квадрата на 3 зоны',
+      'Сетка из 4 окон со скруглёнными углами',
+      'Концентрические полукруги от нижнего края',
+      'Парящий треугольник и тонкая рамка по периметру',
+      'Шахматный ритм из 9 малых квадратов'
+    ];
+
+    const ORG_LIST = [
+      'Ветка эвкалипта, выходящая за край фигуры',
+      'Плавные волнистые пятна (эффект гальки)',
+      'Резной лист монстеры или папоротника',
+      'Россыпь мелких полевых цветов и точек',
+      'Струящиеся ленты-потоки по диагонали',
+      'Силуэты колосков и травинок на просвет'
+    ];
+
+    const LINER_LIST = [
+      'Двойной контур со смещением (эффект эха)',
+      'Параллельная штриховка в тенях',
+      'Точечный градиент (стипплинг) по краю пятна',
+      'Тонкая непрерывная линия без отрыва руки',
+      'Контрастная чёрная заливка одного сегмента',
+      'Перекрёстная сетка внутри геометрической формы'
+    ];
+
+    let locked = { palette: false, geom: false, org: false, liner: false };
+    let currentIdea = {
+      palette: PALETTES[0],
+      geom: GEOM_LIST[0],
+      org: ORG_LIST[0],
+      liner: LINER_LIST[0]
+    };
+
+    function pickRandom(arr, current) {
+      if (arr.length <= 1) return arr[0];
+      let next = current;
+      while (next === current) {
+        next = arr[Math.floor(Math.random() * arr.length)];
+      }
+      return next;
+    }
+
+    function rollIdea() {
+      if (!locked.palette) currentIdea.palette = pickRandom(PALETTES, currentIdea.palette);
+      if (!locked.geom) currentIdea.geom = pickRandom(GEOM_LIST, currentIdea.geom);
+      if (!locked.org) currentIdea.org = pickRandom(ORG_LIST, currentIdea.org);
+      if (!locked.liner) currentIdea.liner = pickRandom(LINER_LIST, currentIdea.liner);
+      renderIdea();
+    }
+
+    function renderIdea() {
+      document.getElementById('genPalette').innerHTML = currentIdea.palette.map(sw => `
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:${sw.hex}"></div>
+          <div class="swatch-label">${sw.name}<span class="swatch-code">${sw.code}</span></div>
+        </div>
+      `).join('');
+      document.getElementById('genGeom').textContent = currentIdea.geom;
+      document.getElementById('genOrg').textContent = currentIdea.org;
+      document.getElementById('genLiner').textContent = currentIdea.liner;
+    }
+
+    document.getElementById('rollIdeaBtn').onclick = rollIdea;
+
+    ['Geom', 'Org', 'Liner'].forEach(key => {
+      const lower = key.toLowerCase();
+      const btn = document.getElementById('lock' + key);
+      btn.onclick = () => {
+        locked[lower] = !locked[lower];
+        btn.textContent = locked[lower] ? '🔒' : '🔓';
+        btn.classList.toggle('locked', locked[lower]);
+      };
+    });
+
+    document.getElementById('saveIdeaAsCardBtn').onclick = () => {
+      const codes = currentIdea.palette.map(p => p.code.split('/')[0].trim()).join(', ') + ', линер';
+      openCardModal(null, {
+        title: currentIdea.org.split(',')[0],
+        markers: codes,
+        colors: currentIdea.palette.map(p => p.hex),
+        note: `Задание: ${currentIdea.geom} + ${currentIdea.org}. Приём: ${currentIdea.liner}.`
+      });
+    };
+
+    // Backup
+    document.getElementById('backupBtn').onclick = () => document.getElementById('backupModal').classList.add('open');
+    document.getElementById('closeBackupBtn').onclick = () => document.getElementById('backupModal').classList.remove('open');
+
+    document.getElementById('exportJsonBtn').onclick = () => {
+      const blob = new Blob([JSON.stringify(cards, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `art-cards-10x10-${todayStr()}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    };
+
+    document.getElementById('importJsonInput').onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(reader.result);
+          if (Array.isArray(parsed)) {
+            cards = parsed;
+            saveCards();
+            renderGallery();
+            document.getElementById('backupModal').classList.remove('open');
+          }
+        } catch (err) {
+          alert('Не удалось прочитать файл резервной копии');
+        }
+      };
+      reader.readAsText(file);
+    };
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
+
+    rollIdea();
+    renderGallery();
+  </script>
+</body>
+</html>
